@@ -3,123 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen"/>
+  <title>jessumguy's Rock, Paper, Scissors</title>
 </head>
 <body>
-  <script>
-
-    const game = () => {
-      let playerScore = 0;
-      let computerScore = 0;
-      let drawScore = 0;
-      let keepPlaying = true;
-      
-      for (gameRound = 0; gameRound < 5 && (keepPlaying === true); gameRound++) {  
-        switch(playRound()) {
-          case (roundResult = 'WIN'):
-            playerScore++;
-            console.log(`Round ${gameRound + 1} Won!, Player Score: ${playerScore}, Computer Score: ${computerScore}`)
-            break;
-          case (roundResult = 'LOSS'):
-            computerScore++;
-            console.log(`Round ${gameRound + 1} Loss!, Player Score: ${playerScore}, Computer Score: ${computerScore}`)
-            break;
-          case (roundResult = 'DRAW'):
-            drawScore++;
-            console.log(`Round ${gameRound + 1} Draw!, Player Score: ${playerScore}, Computer Score: ${computerScore}`)
-            break;
-          case (playerSelection = null):
-            keepPlaying = false;
-            alert("You have left the game!");
-            console.log(`You have left the game; ggnore`)
-            break;
-        }
-      }
-
-      if (playerScore > computerScore) {
-        console.log (`Game Won! Rounds Won: ${playerScore}, Rounds Loss: ${computerScore}, Rounds Draw: ${drawScore}`)
-      } else if (playerScore < computerScore) {
-        console.log (`Game Loss! Rounds Won: ${playerScore}, Rounds Loss: ${computerScore}, Rounds Draw: ${drawScore}`)
-      } else {
-        console.log (`Game Draw! Rounds Won: ${playerScore}, Rounds Loss: ${computerScore}, Rounds Draw: ${drawScore}`)
-      }
-    }
-    
-    
-    const playRound = () => {
-      let playerSelection = playerPlay();
-      let computerSelection = computerPlay();
-      let roundResult;
-
-      if (playerSelection === computerSelection) {
-        console.log(`Draw!`)
-        return roundResult = 'DRAW';
-      } else {
-        switch (playerSelection) {
-          case 'rock':
-            if (computerSelection === 'paper') {
-              console.log(`You Lose! ${computerSelection} beats ${playerSelection}`)
-              return roundResult = 'LOSS';
-            } else {
-              console.log(`You Win! ${playerSelection} beats ${computerSelection}`)
-              return roundResult = 'WIN'
-            }
-            break;
-          case 'paper':
-            if (computerSelection === 'scissors') {
-              console.log(`You Lose! ${computerSelection} beats ${playerSelection}`)
-              return roundResult = 'LOSS';
-            } else {
-              console.log(`You Win! ${playerSelection} beats ${computerSelection}`)
-              return roundResult = 'WIN'
-            }
-            break;
-          case 'scissors':
-            if (computerSelection === 'rock') {
-              console.log(`You Lose! ${computerSelection} beats ${playerSelection}`)
-              return roundResult = 'LOSS';
-            } else {
-              console.log(`You Win! ${playerSelection} beats ${computerSelection}`)
-              return roundResult = 'WIN';
-            }
-            break;
-            case null:
-            return playerSelection;
-        }
-      }
-    }
-
-    const computerPlay = () => {
-      let plays = ['rock', 'paper', 'scissors'];
-      let computerSelection = plays[Math.floor(Math.random() * plays.length)];
-    
-      console.log(`The Computer played ${computerSelection}!`)
-      return computerSelection;
-    };
-
-    const playerPlay = () => {
-      let plays = ['rock', 'paper', 'scissors'];
-
-    while(true) {
-      let playerSelection = prompt("Rock, Paper or Scissors?");
-     
-      if (playerSelection === null ) {
-        return playerSelection;
-      }
-
-      playerSelection = playerSelection.toLowerCase();
-        if (plays.includes(playerSelection)) {
-          console.log(`You played ${playerSelection}!`)
-          return playerSelection;
-        } else {
-          alert(`Invalid play! Please input "Rock", "Paper" or "Scissors`);
-          console.log(`Invalid play! Please input "Rock", "Paper" or "Scissors`)
-        }
-      }
-    }
-
-    game();
-
-  </script>
-  </body>
+  <div class="grid">
+    <header>
+      <h1>ROCK PAPER SCISSORS</h1>
+      <div id="scoreboard">
+        <p>First to 5 Points Win!</p>
+        <p id="round-number">Select one of the following plays to begin the game!</p>
+        <p id="player-play"></p>
+        <p id="computer-play"></p>
+        <p id="round-result"></p>
+        <p id="game-result"></p>
+      </div>
+    </header>
+    <main>
+      <div id="rps-buttons">
+        <button id="rock" class="player-plays">ROCK</button>
+        <button id="paper" class="player-plays">PAPER</button>
+        <button id="scissors" class="player-plays">SCISSORS</button>
+        <button id="reset-game">RESET</button>
+      </div>
+    </main>
+    <footer>
+        <button id="about">ABOUT</button>
+          <div id="aboutinfo">
+            <h2>What is this?</h2>
+              <p>Rock Paper Scissors Project w/ JavaScript and DOM Manipulation - v0.7 from <a href="https://www.theodinproject.com/lessons/dom-manipulation">THE ODIN PROJECT</a></p>
+            <h2>About Me</h2>
+              <p>Thanks for clicking this button! I'm a aspiring developer going the self-learning route.</p>
+              <p>Check out my repository on <a href="https://github.com/jessumguy/">GitHub</a></p>
+          </div>
+    </footer>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
 </html>

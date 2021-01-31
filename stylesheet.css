@@ -1,0 +1,7 @@
+#aboutinfo {
+    display: none;
+}
+
+#aboutinfo.show {
+    display: block;
+}
