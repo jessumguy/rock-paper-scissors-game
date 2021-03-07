@@ -1,4 +1,11 @@
-[DEMO](https://jessumguy.github.io/rock-paper-scissors-game/ "Rock Paper Scissors")
+[DEMO Site](https://jessumguy.github.io/rock-paper-scissors-game/ "Rock Paper Scissors")
+
+# Credits:
+
+Images used:
+1. Rock Paper Scissors Images acting as buttons: http://clipartmag.com/images/rock-clipart-32.png
+2. Background Wallpaper: https://images.hdqwalls.com/download/8-bit-artwork-house-island-in-middle-of-water-8v-3840x2400.jpg
+
 
 # Update 31/01/2021
 

@@ -124,7 +124,7 @@ function checkForWinner() {
 
       resetGame.style.display = "none";
 
-      const rpsButtonsContainer = document.querySelector('#rps-buttons'); 
+      const rpsButtonsContainer = document.querySelector('#refresh-about-buttons'); 
       const playAgain = document.createElement("BUTTON");
       playAgain.innerHTML = `PLAY AGAIN`;
       rpsButtonsContainer.appendChild(playAgain);

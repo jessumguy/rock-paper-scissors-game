@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap"/>
   <title>jessumguy's Rock, Paper, Scissors</title>
 </head>
 <body>
   <div class="grid">
     <header>
-      <h1>ROCK PAPER SCISSORS</h1>
       <div id="scoreboard">
+        <h1>ROCK PAPER SCISSORS</h1>
         <p>First to 5 Points Win!</p>
         <p id="round-number">Select one of the following plays to begin the game!</p>
         <p id="player-play"></p>
@@ -21,21 +22,23 @@
     </header>
     <main>
       <div id="rps-buttons">
-        <button id="rock" class="player-plays">ROCK</button>
-        <button id="paper" class="player-plays">PAPER</button>
-        <button id="scissors" class="player-plays">SCISSORS</button>
+        <button id="rock" class="player-plays"><img src="/assets/rock.png"></button>
+        <button id="paper" class="player-plays"><img src="/assets/paper.png"></button>
+        <button id="scissors" class="player-plays"><img src="/assets/scissors.png"></button>
+      </div>
+      <div id="refresh-about-buttons">
         <button id="reset-game">RESET</button>
+        <button id="about">ABOUT</button>
       </div>
     </main>
     <footer>
-        <button id="about">ABOUT</button>
-          <div id="aboutinfo">
-            <h2>What is this?</h2>
-              <p>Rock Paper Scissors Project w/ JavaScript and DOM Manipulation - v0.7 from <a href="https://www.theodinproject.com/lessons/dom-manipulation">THE ODIN PROJECT</a></p>
-            <h2>About Me</h2>
-              <p>Thanks for clicking this button! I'm a aspiring developer going the self-learning route.</p>
-              <p>Check out my repository on <a href="https://github.com/jessumguy/">GitHub</a></p>
-          </div>
+      <div id="aboutinfo">
+        <h2>What is this?</h2>
+          <p>Rock Paper Scissors Project w/ JavaScript and DOM Manipulation - v0.9 from <a href="https://www.theodinproject.com/lessons/dom-manipulation">THE ODIN PROJECT</a></p>
+        <h2>About Me</h2>
+          <p>Thanks for clicking this button! I'm a aspiring developer going the self-learning route.</p>
+          <p>Check out my repository on <a href="https://github.com/jessumguy/">GitHub</a></p>
+      </div>
     </footer>
   </div>
   
