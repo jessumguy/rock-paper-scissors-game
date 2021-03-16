@@ -5,7 +5,16 @@
 Images used:
 1. Rock Paper Scissors Images acting as buttons: http://clipartmag.com/images/rock-clipart-32.png
 2. Background Wallpaper: https://images.hdqwalls.com/download/8-bit-artwork-house-island-in-middle-of-water-8v-3840x2400.jpg
+3. CSS Transition effects Wes Bos's JavaScript 30 - JavaScript Drum Kit Repository https://github.com/wesbos/JavaScript30/tree/master/01%20-%20JavaScript%20Drum%20Kit
 
+# Update 07/03/2021
+
+v0.9 released. Styling of page for the most part is done. Time to move on to the next chapter!
+
+Styling Touchups to be done when I revisit this page:
+
+1. Add support for keyboard presses for the buttons
+2. Touch up on button styling
 
 # Update 31/01/2021
 

@@ -9,7 +9,7 @@
 html {
     font-family: 'DotGothic16', sans-serif;
     font-size: 22px;
-    background: url(/assets/pixelArtBackground.jpeg) no-repeat center center fixed;
+    background: url(assets/pixelArtBackground.jpeg) no-repeat center center fixed;
     background-size: cover;
     max-width: 100%;
     height: auto;
